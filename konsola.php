@@ -24,10 +24,10 @@
             $command = $_POST['command'];
 
             if(empty($_POST['command'])){
-                $commandStatus = "Nie podano komendy.";
+                $commandStatus = "Missing command.";
             }
             else{
-                $commandStatus = "Wykonaliśmy komendę \"$command\" <br>";
+                $commandStatus = "We executed the command \"$command\" <br>";
             }
 
             $timeout = 3;
@@ -40,19 +40,22 @@
                 $rcon->sendCommand("$command");
             }
             else {
-                $commandStatus = "Błędne hasło!";
+                $commandStatus = "Wrong Rcon password!";
             }
         }
     ?>
 
     <body>
-        <?php
-          echo "$commandStatus";  
-        ?>
-        
-        <form method="post" action="index.php">
+        <div class="container">
             <br>
-            <input type="submit" value="Wykonaj następną komendę">
-        </form>
+            <?php
+                echo "$commandStatus";  
+            ?>
+        
+            <form method="post" action="index.php">
+                <br>
+                <input type="submit" value="Execute next command">
+            </form>
+        </div>
     </body>
 </html>
