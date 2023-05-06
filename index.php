@@ -23,5 +23,7 @@
         <input type="submit" name="przeslij" class="commandButton" value="Execute command">
       </form>
     </div>
+    <?php
+    ?>
   </body>
 </html>

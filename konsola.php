@@ -27,7 +27,10 @@
                 $commandStatus = "Missing command.";
             }
             else{
-                $commandStatus = "We executed the command \"$command\" <br>";
+                $commandStatus = "<p class=\"executedCommandText\">We executed the command</p> 
+                                    <p class=\"executedCommandText\">&nbsp;</p>
+                                    <p class=\"executedCommand\"> $command</p>
+                                    <br>";
             }
 
             $timeout = 3;
