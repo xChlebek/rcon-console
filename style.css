@@ -1,0 +1,17 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    background-color: #111111;
+    color: white;
+}
+
+.container {
+    float: center;
+    margin: auto;
+    background-color: #0071EB;
+    color: white;
+    width: 950px;
+    padding: 4px 16px;
+    margin-bottom: 32px;
+}

@@ -1,4 +1,8 @@
 <html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
     <?php
 
         if (isset($_POST['server']) && isset($_POST['port']) && isset($_POST['password']) && isset($_POST['command'])) {
